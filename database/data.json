@@ -1,0 +1,26 @@
+{
+  "nomePai": "Carlos Silva",
+  "subtitulo": "O melhor pai do mundo • Edição Especial",
+  "videoFundo": "../assets/videos/back_1.mp4",
+  "musicaFundo": "assets/audios/AERØHEAD - HAVEN  No Copyright Music - BM PRODUTORA (youtube).mp3",
+  "mensagemPrincipal": "Pai, obrigado por ser nosso maior exemplo de força, carinho e dedicação. Cada lição sua é um guia para a nossa vida. Te amamos muito!",
+  "recados": [
+    {
+      "autor": "Ana (Filha)",
+      "texto": "Pai, obrigada por sempre me apoiar em tudo. Você é meu herói!"
+    },
+    {
+      "autor": "Lucas (Filho)",
+      "texto": "Valeu por todas as risadas e conselhos de churrasco, coroa!"
+    }
+  ],
+  "galeria": [
+    "assets/imgs/fotos/foto_1.jpg",
+    "assets/imgs/fotos/foto_2.jpg",
+    "assets/imgs/fotos/foto_3.jpg",
+    "assets/imgs/fotos/foto_4.jpg",
+    "assets/imgs/fotos/foto_5.jpg",
+    "assets/imgs/fotos/foto_6.jpg"
+
+  ]
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homenagem - Dia dos Pais</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Arquivo CSS Externo -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+   
+
+    <!-- Vídeo de Fundo -->
+    <video autoplay muted loop playsinline class="bg-video" id="videoFundo">
+        <source src="" type="video/mp4">
+    </video>
+    <div class="overlay"></div>
+
+    <!-- TELA 1: A CARTA / LIVRO FECHADO (Início) -->
+    <div class="envelope-screen" id="envelopeScreen">
+        <div class="glass-card envelope-card" onclick="abrirCarta()">
+            <div class="seal-icon">
+                <i class="fa-solid fa-envelope-open-text"></i>
+            </div>
+            <span class="hero-badge"><i class="fa-solid fa-gift"></i> Toque para Abrir</span>
+            <h1 id="envelopeTitulo">Uma Homenagem Especial</h1>
+            <p class="subtitle">Você recebeu uma mensagem secreta para o Dia dos Pais.</p>
+            <div class="open-instruction">
+                <span>Clique para abrir o presente</span>
+                <i class="fa-solid fa-arrow-down animate-bounce"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- TELA 2: O CONTEÚDO COMPLETO (Oculto até clicar) -->
+    <div class="container hidden" id="mainContent">
+        
+        <!-- Player de Música Flutuante -->
+        <div class="glass-card music-player-card">
+            <div class="music-info">
+                <div class="music-icon-pulse">
+                    <i class="fa-solid fa-music" id="musicIcon"></i>
+                </div>
+                <div class="music-text">
+                    <span class="music-title">Trilha Sonora Especial</span>
+                    <span class="music-status" id="musicStatus">Toque para ouvir</span>
+                </div>
+            </div>
+            <button class="music-toggle-btn" id="playBtn" onclick="toggleMusica()">
+                <i class="fa-solid fa-play" id="playIcon"></i>
+            </button>
+            <!-- Elemento de Áudio Oculto -->
+            <audio id="audioFundo" loop>
+                <source src="" type="audio/mpeg">
+            </audio>
+        </div>
+
+
+        <!-- Hero Section -->
+        <div class="glass-card">
+            <!-- Espaço para a imagem de Feliz Dia dos Pais que você quiser usar -->
+            <div class="banner-pai-container">
+                <img src="assets\imgs\app\banner.png" alt="Feliz Dia dos Pais" class="banner-pai-img">
+            </div>
+            
+            <span class="hero-badge"><i class="fa-solid fa-heart"></i> Feliz Dia dos Pais</span>
+            <h1 id="nomePai">Carregando...</h1>
+            <p class="subtitle" id="subtitulo">Preparando homenagem...</p>
+        </div>
+
+        <!-- Mensagem Principal -->
+        <div class="glass-card message-box">
+            <p id="mensagemPrincipal">Carregando mensagem...</p>
+        </div>
+
+        <!-- Galeria de Fotos (Slider) -->
+        <div class="glass-card">
+            <h3><i class="fa-solid fa-images"></i> Nossos Momentos</h3>
+            
+            <div class="slider-container">
+                <button class="slider-btn prev-btn" onclick="moverSlider(-1)"><i class="fa-solid fa-chevron-left"></i></button>
+                
+                <div class="slider-track" id="galeriaContainer">
+                    <!-- Preenchido dinamicamente via JS -->
+                </div>
+                
+                <button class="slider-btn next-btn" onclick="moverSlider(1)"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        
+
+        <!-- Mural de Recados -->
+        <div class="glass-card">
+            <h3><i class="fa-solid fa-comments"></i> Mural da Família</h3>
+            <div class="recados-container" id="recadosContainer">
+                <!-- Preenchido via JS -->
+            </div>
+        </div>
+
+        <!-- Mural de Recados -->
+        <div class="glass-card">
+            <h3><i class="fa-solid fa-comments"></i> Mural da Família</h3>
+            <!-- Preenchido via JS -->
+        </div>
+
+
+        <!-- Card de Divulgação / Vendas (Instagram) -->
+        <div class="glass-card" style="border-color: rgba(225, 48, 108, 0.4); background: rgba(225, 48, 108, 0.08);">
+            <h3 style="color: #ff758c;"><i class="fa-solid fa-wand-magic-sparkles"></i> Gostou desta homenagem?</h3>
+            <p style="font-size: 0.85rem; color: #ccc; margin-bottom: 14px;">Surpreenda seu pai também com uma página exclusiva interativa como esta!</p>
+            <a href="https://www.instagram.com/edatomico/" target="_blank" class="btn-instagram">
+                <i class="fa-brands fa-instagram"></i> Encomendar via Instagram
+            </a>
+        </div>
+        
+
+        <div class="footer">
+            Criado com carinho • Homenagem Exclusiva
+            
+            <p class="footer-note">desenvolvido por : Edinaldo Cicero.</p>
+        </div>
+
+    </div>
+
+    
+    <!-- MODAL DE TELA CHEIA PARA AS FOTOS -->
+    <div class="foto-modal" id="fotoModal" onclick="fecharModal()">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="imgModal">
+    </div>
+
+
+    <!-- Arquivo JS Externo -->
+    <script src="js/script.js"></script>
+</body>
+</html>
