@@ -1,7 +1,7 @@
 {
   "nomePai": "Carlos Silva",
   "subtitulo": "O melhor pai do mundo • Edição Especial",
-  "videoFundo": "../assets/videos/back_1.mp4",
+  "videoFundo": "assets/videos/back_1.mp4",
   "musicaFundo": "assets/audios/AERØHEAD - HAVEN  No Copyright Music - BM PRODUTORA (youtube).mp3",
   "mensagemPrincipal": "Pai, obrigado por ser nosso maior exemplo de força, carinho e dedicação. Cada lição sua é um guia para a nossa vida. Te amamos muito!",
   "recados": [
